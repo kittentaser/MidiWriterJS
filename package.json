@@ -1,6 +1,6 @@
 {
   "name": "midi-writer-js",
-  "version": "3.1.1",
+  "version": "3.1.1-nffork.0",
   "description": "A library providing an API for generating MIDI files.",
   "main": "build/index.js",
   "types": "build/types/main.d.ts",
@@ -41,6 +41,7 @@
   },
   "scripts": {
     "build": "mkdir -p build && rollup -c",
+    "prepare": "npm run build"
     "docs": "npx typedoc --options typedoc.json",
     "lint:js": "eslint 'src/**/**.ts'",
     "prepublishOnly": "npm test",
