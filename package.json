@@ -41,6 +41,7 @@
   },
   "scripts": {
     "build": "mkdir -p build && rollup -c",
+    "prepare": "npm run build",
     "docs": "npx typedoc --options typedoc.json",
     "lint:js": "eslint 'src/**/**.ts'",
     "prepublishOnly": "npm test",
