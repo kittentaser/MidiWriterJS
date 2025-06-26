@@ -1,7 +1,29 @@
 {
-    "compilerOptions": {
-        "lib": ["esnext", "dom"],
-        "declaration": true,
-        "declarationDir": "./types"
-    }
+  "compilerOptions": {
+    /* allow named capture groups */
+    "target": "es2018",
+    /* match your bundler/runtime: esnext for ESM or "commonjs" for Node */
+    "module": "esnext",
+    "moduleResolution": "node",
+    /* include newer APIs and DOM types */
+    "lib": ["es2018", "dom"],
+
+    /* keep source and output separate */
+    "rootDir": "src",
+    "outDir": "dist",
+
+    /* declarations */
+    "declaration": true,
+    "declarationDir": "./types",
+
+    /* smooth interop with CJS packages */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    /* trim noise & enforce consistency */
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
