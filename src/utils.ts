@@ -1,5 +1,5 @@
 import {Constants} from './constants';
-import {toMidi} from '@tonaljs/midi/;
+import {toMidi} from '../node_modules/@tonaljs/midi/dist/index';
 
 /**
  * Static utility functions used throughout the library.
