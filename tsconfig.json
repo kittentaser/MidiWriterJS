@@ -1,9 +1,7 @@
 {
-  "compilerOptions": {
-    "target": "es2018",        // ← enable RegExp named captures
-    "lib": ["esnext", "dom"],   // esnext already includes ES2018+, so this is fine
-    "declaration": true,
-    "declarationDir": "./types",
-    // …any other options you need
-  }
+    "compilerOptions": {
+        "lib": ["esnext", "dom"],
+        "declaration": true,
+        "declarationDir": "./types"
+    }
 }
